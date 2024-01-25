@@ -5,7 +5,7 @@ const submit = document.querySelector("button[type='submit']");
 
 submit.addEventListener("click", (event) => {
   event.preventDefault();
-  if (email.value !== "" && password.value !== "") {
+  if (email.value.trim() !== "" && password.value.trim() !== "") {
     console.log(
       `{${email.name}: ${email.value}, ${password.name}: ${password.value}}`
     );
