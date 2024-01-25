@@ -16,7 +16,7 @@ const images = [
 function addImages() {
   const gallery = document.querySelector(".gallery");
 
-  images.forEach((image) => {
+  images.map((image) => {
     const listItem = document.createElement("li");
 
     listItem.insertAdjacentHTML(
