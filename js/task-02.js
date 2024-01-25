@@ -7,7 +7,6 @@ const ingredients = [
   "Condiments",
 ];
 
-function createListItems() {
   const list = document.querySelector("ul#ingredients");
 
   const items = ingredients.map((ingredient) => {
@@ -15,8 +14,9 @@ function createListItems() {
 
     item.textContent = ingredient;
     item.classList.add("item");
-    list.append(item);
+    return item;
   });
-}
 
-createListItems();
+list.append(...items)
+
+
